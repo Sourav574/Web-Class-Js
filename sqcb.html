@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Squares and Cubes</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+      }
+      
+      h1 {
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 20px;
+      }
+      
+      table {
+        border-collapse: collapse;
+        margin: 20px auto;
+        font-size: 16px;
+      }
+      
+      th, td {
+        padding: 10px;
+        text-align: center;
+        border: 1px solid #ccc;
+      }
+      
+      th {
+        background-color: #4CAF50;
+        color: white;
+      }
+      
+      tr:nth-child(even) {
+        background-color: #b89191;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Squares and Cubes</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Number</th>
+          <th>Square</th>
+          <th>Cube</th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+      </tbody>
+    </table>
+    <script>
+      const tableBody = document.getElementById("table-body");
+      for (let i = 1; i <= 20; i++) {
+        const row = document.createElement("tr");
+        const numberCell = document.createElement("td");
+        numberCell.textContent = i;
+        const squareCell = document.createElement("td");
+        squareCell.textContent = i * i;
+        const cubeCell = document.createElement("td");
+        cubeCell.textContent = i * i * i;
+        row.appendChild(numberCell);
+        row.appendChild(squareCell);
+        row.appendChild(cubeCell);
+        tableBody.appendChild(row); 
+      }
+    </script>
+  </body>
+</html>

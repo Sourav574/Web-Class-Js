@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    
+        <title>Login Page</title>
+          
+    </head>
+    <body>
+        <form action="success.html" id="form" onsubmit="return validate()">
+
+            <input type="text" id="user" placeholder="  "><br>
+            <input type="password" id="pass" placeholder=" "><br>
+            
+            <button type="submit">Button</button>
+        </form>
+    </body>
+  
+</html>
+<script>
+    function validate(){
+    var username= document.getElementById("user").value;
+    var password= document.getElementById("pass").value;
+    if(username.value=="  "){
+        alert("Empty field");
+        
+        return false;
+    }
+    else if(password.length < 8){
+        alert("Password must be greater than greater 8")
+        return false;
+    }
+    else{
+        return true;
+    }
+}
+</script>

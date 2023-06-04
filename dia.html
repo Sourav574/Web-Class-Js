@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Diamond Pattern</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #693c3c;
+      }
+      #diamond{
+        margin-top: 24px;
+        text-align: center;
+      }
+      .diamond-row{
+        display: flex; 
+        flex-direction: row;
+        justify-content: center;
+      }
+      .diamond-cell{
+        font-size: 24px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Diamond Pattern</h1>
+    <div id="diamond"></div>
+  </body>
+</html>
+
+<script>
+  let size=5;
+  let diamond=document.getElementById("diamond");
+  for(let i=1; i<=size; i+=2){
+    let row=document.createElement("div");
+    row.classList.add("diamond-row");
+    let numCells=i;
+    for(let j=0; j<(size-i)/2; j++){
+      let emptyCell=document.createElement("div");
+      emptyCell.classList.add("diamond-cell");
+      row.appendChild(emptyCell);
+    }
+    for(let j=0; j<numCells; j++){
+      let emptyCell=document.createElement("div");
+      cell.classList.add("diamond-cell");
+      cell.textContext="*";
+      row.appendChild(cell);
+    }
+  }
+</script>

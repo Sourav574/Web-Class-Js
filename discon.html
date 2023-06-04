@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Distance Converter</title>
+
+    <script>
+        function convert1() {
+          var km = document.getElementById("km").value;
+          var ml = km / 1.60934;
+          document.getElementById("ml").value = ml;
+        }
+      </script>
+
+  </head>
+  <body>
+    <h1>Distance Converter</h1>
+  
+      <label for="km">Kilometers:</label>
+      <input type="number" id="km" name="km">
+      <input type="button" value="Convert" onclick="convert1()">
+
+      <br><br>
+    <label for="ml">Miles:</label>
+    <input type="number" id="ml" name="ml" readonly>
+    
+    
+   
+  </body>
+</html>

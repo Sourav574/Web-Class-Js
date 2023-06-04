@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <h1><center>Calculator</center></h1>
+    </head>
+    <body>
+        <center>
+        <form name="cal">
+            <div>
+                <input type="textbox" placeholder="Anwser" name="Ans">
+            </div>
+            <div>
+                <input type="button" value="7" onclick="cal.ans.value +='7'">
+                <input type="button" value="8" onclick="cal.ans.value +='8'">
+                <input type="button" value="9" onclick="cal.ans.value +='9'">
+                <input type="button" value="/" onclick="cal.ans.value +='/'">
+            </div>
+            <div>
+                <input type="button" value="4" onclick="cal.ans.value +='4'">
+                <input type="button" value="5" onclick="cal.ans.value +='5'">
+                <input type="button" value="6" onclick="cal.ans.value +='6'">
+                <input type="button" value="*" onclick="cal.ans.value +='*'">
+            </div>
+
+            <div>
+                <input type="button" value="1" onclick="cal.ans.value +='1'">
+                <input type="button" value="2" onclick="cal.ans.value +='2'">
+                <input type="button" value="3" onclick="cal.ans.value +='3'">
+                <input type="button" value="-" onclick="cal.ans.value +='-'">
+            </div>
+            <div>
+                <input type="button" value="0" onclick="cal.ans.value +='0'">
+                <input type="button" value="." onclick="cal.ans.value +='.'">
+                <input type="button" value="=" onclick="cal.ans.value =eval(cal.ans.value)">
+                <input type="button" value="+" onclick="cal.ans.value +='+'">
+            </div>
+
+            <input type="reset" value="Reset">
+            
+        </form>
+    </center>
+    </body>
+</html>

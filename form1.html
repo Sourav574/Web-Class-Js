@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="StudentRegistrationForm.css">
+    <script src="StudentRegistrationForm.js" defer></script>
+    <title>Registration Form</title>
+</head>
+
+<body id="body">
+    <h1>STUDENTS LOGIN FROM</h1>
+    <div>
+        <form action="">
+            <table id="firt">
+                <tr>
+                    <td class="tdl">
+                        <label for="fname">FIRST NAME</label>
+                    </td>
+                    <td class="tdr">
+                        <input type="text" name="fname" id="fname">
+                        <p>(max 30 characters a-z and A-Z)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tdl">
+                        <label for="lname">LAST NAME</label>
+                    </td>
+                    <td class="tdr">
+                        <input type="text" name="lname" id="lname">
+                        <p>(max 30 characters a-z and A-Z)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tdl">
+                        <label for="dob">DATE OF BIRTH</label>
+                    </td>
+                    <td class="tdr">
+                        <select name="day" id="day">
+                            <option value="" disabled selected>Day:</option>
+                        </select>
+                        <select name="month" id="month">
+                            <option value="" disabled selected>Month:</option>
+                        </select>
+                        <select name="year" id="year">
+                            <option value="" disabled selected>Year:</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tdl">
+                        <label for="email">EMAIL ID</label>
+                    </td>
+                    <td class="tdr">
+                        <input name="email" type="email" id="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tdl">
+                        <label for="mb">MOBILE NUMBER</label>
+                    </td>
+                    <td class="tdr">
+                        <input type="number" name="mb" id="mb">
+                        <p>(10 digit number)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tdl">
+                        <label for="gender">GENDER</label>
+                    </td>
+                    <td class="tdr">
+                        Male<input type="radio" name="gender" value="Male">
+                        Female<input type="radio" name="gender" value="Female">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tdl">
+                        <label for="address">ADDRESS</label>
+                    </td>
+                    <td class="tdr">
+                        <textarea name="address" id="address" cols="30" rows="3"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tdl">
+                        <label for="city">CITY</label>
+                    </td>
+                    <td class="tdr">
+                        <input type="text" id="city" name="city">
+                        <p>(max 30 characters a-z and A-Z)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tdl">
+                        <label for="pin">PINCODE</label>
+                    </td>
+                    <td class="tdr">
+                        <input type="text" name="pin" id="pin">
+                        <p>(6 digit pin)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tdl">
+                        <label for="state">STATE</label>
+                    </td>
+                    <td class="tdr">
+                        <input type="text" id="state" name="state">
+                        <p>(max 30 characters a-z and A-Z)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tdl">
+                        <label for="">COUNTRY</label>
+                    </td>
+                    <td class="tdr">
+                        <input type="text" name="country" id="country" value="India">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tdl">
+                        <label for="hob">
+                            HOBBIES
+                        </label>
+                    </td>
+                    <td class="tdr">
+                        Drawing<input type="checkbox" name="hob" value="Drawing">
+                        Singing<input type="checkbox" name="hob" value="Singing">
+                        Dancing<input type="checkbox" name="hob" value="Dancing">
+                        Sketching<input type="checkbox" name="hob" value="Sketching">
+                        Others<input type="checkbox" name="hob" value="Others">
+                        <input type="text" name="hobo">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tdl">
+                        <label for="qf">
+                            QUALIFICATION
+                        </label>
+                    </td>
+                    <td class="tdr">
+                        <table id="sect">
+                            <tr>
+                                <td>SL.No</td>
+                                <td>Examination</td>
+                                <td><center>Board</center></td>
+                                <td>Percentage</td>
+                                <td>Year of Passing</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Class X</td>
+                                <td bgColor="white"><input type="text"></td>
+                                <td bgColor="white"><input type="number"></td>
+                                <td bgColor="white"><input type="number"></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Class XII</td>
+                                <td bgColor="white"><input type="text"></td>
+                                <td bgColor="white"><input type="number"></td>
+                                <td bgColor="white"><input type="number"></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Graduation</td>
+                                <td bgColor="white"><input type="text"></td>
+                                <td bgColor="white"><input type="number"></td>
+                                <td bgColor="white"><input type="number"></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Masters</td>
+                                <td bgColor="white"><input type="text"></td>
+                                <td bgColor="white"><input type="number"></td>
+                                <td bgColor="white"><input type="number"></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>(10 char max)</td>
+                                <td>(upto 2 decimal)</td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tdl">
+                        <label for="courses">
+                            COURSES APPLIED FOR
+                        </label>
+                    </td>
+                    <td class="tdr">
+                        BCA<input type="radio" name="courses">
+                        B.Com<input type="radio" name="courses">
+                        B.Sc<input type="radio" name="courses">
+                        B.A.<input type="radio" name="courses">
+                    </td>
+                </tr>
+                <tr>
+                    <td id="mb" rowspan="2">
+                        <button type="submit">SUBMIT</button>
+                        <button type="reset">RESET</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div id="div"></div>
+
+</body>
+
+</html>

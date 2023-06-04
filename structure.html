@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Structure</title>
+</head>
+
+<body>
+    <div class="main-div">
+        <div class="first-div"></div>
+        <div class="second-div">
+            <div class="second-div-sub">Home</div>
+            <div class="second-div-sub">About</div>
+            <div class="second-div-sub">Course</div>
+            <div class="second-div-sub">Gallery</div>
+            <div class="second-div-sub">Contact Us</div>
+        </div>
+        <div class="third-div">
+            <div class="forth-div">
+                <div class="forth-div-sub">Home</div>
+                <div class="forth-div-sub">About</div>
+                <div class="forth-div-sub">Course</div>
+                <div class="forth-div-sub">Gallery</div>
+                <div class="forth-div-sub">Contact Us</div>
+            </div>
+            <div class="forth-div-sub-two"><img class="big-image" src="mca.jpg"></div>
+        </div>
+        <div class="fifth-div">Our Clients</div>
+        <div class="sixth-div">
+            <div class="img-sixth-div"><img src="mca.jpg" class="insert-img"></div>
+            <div class="img-sixth-div"><img src="mca.jpg" class="insert-img"></div>
+            <div class="img-sixth-div"><img src="mca.jpg" class="insert-img"></div>
+        </div>
+        <div class="footer">Home | About | Course | Gallery | Contact Us</div>
+    </div>
+</body>
+<style>
+    div {
+        outline: auto;
+        text-align: center;
+        font-size: large;
+        font-weight: 600;
+    }
+
+    img {
+        object-fit: cover;
+    }
+
+    .main-div {
+        width: 1000px;
+        height: 590px;
+    }
+
+    .first-div {
+        height: 100px;
+    }
+
+    .second-div {
+        height: 40px;
+        display: flex;
+    }
+
+    .second-div-sub {
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .third-div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    । .forth-div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .forth-div-sub{
+        height: 40px;
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .forth-div-sub-two {
+        width: 750px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .big-image {
+        height: 200px;
+        width: 750px;
+
+    }
+    .fifth-div {
+        height: 150px;
+        width: 1000px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        object-fit: cover;
+    }
+
+    .sixth-div {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+
+    }
+    .img-sixth-div {
+        width: 333px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .insert-img {
+        width: 333px;
+        height: 100px;
+        object-fit: cover;
+    }
+
+    .footer {
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+</style>
+</html>
